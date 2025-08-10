@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aastha Prajapati | Portfolio</title>
+  <link rel="stylesheet" href="folio.css" />
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="nav-left">Aastha Prajapati</div>
+    <ul class="nav-right">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact Me</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero / Header -->
+  <header id="home">
+    <img src="profile.jpg" alt="Aastha Prajapati Profile Picture" id="profile-pic" />
+    <h1>Aastha Prajapati</h1>
+    <h2>Web Designer & Full Stack Developer</h2>
+    <div class="skills-intro" id="skills-intro"></div>
+    <button class="btn" onclick="document.getElementById('portfolio').scrollIntoView({behavior:'smooth'})">View My Work</button>
+  </header>
+
+  <!-- Main Sections -->
+  <main class="container">
+
+    <!-- About Section -->
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I’m Aastha Prajapati, a passionate web designer and full stack developer. Currently pursuing a B.Tech in Electronics and Communication, I blend design thinking with solid technical skills to build responsive, user-centered digital experiences.</p>
+      <ul>
+        <li><strong>Education:</strong> B.Tech in Electronics and Communication, Roorkee Institute of Technology (2023–2027)</li>
+        <li><strong>Internship:</strong> Intern at Prodigy Infotech (July 15, 2025 – August 15, 2025)</li>
+      </ul>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="category">Technical Skills </div>
+      <div class="skill">
+        <div class="skill-name">HTML</div>
+        <div class="skill-bar"><div class="skill-level" data-level="90%"></div></div>
+      </div>
+      <div class="skill">
+        <div class="skill-name">CSS</div>
+        <div class="skill-bar"><div class="skill-level" data-level="80%"></div></div>
+      </div>
+      <div class="skill">
+        <div class="skill-name">JavaScript</div>
+        <div class="skill-bar"><div class="skill-level" data-level="65%"></div></div>
+      </div>
+
+      <div class="category"></div>
+      <div class="skill">
+        <div class="skill-name">Python</div>
+        <div class="skill-bar"><div class="skill-level" data-level="75%"></div></div>
+      </div>
+      <div class="skill">
+        <div class="skill-name">C / C++</div>
+        <div class="skill-bar"><div class="skill-level" data-level="75%"></div></div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+      <h2>Services</h2>
+      <div class="service-card">
+        <div class="service-icon">🎨</div>
+        <div class="service-title">UI/UX Design</div>
+        <div class="service-desc">Crafting intuitive and engaging user interfaces and experiences tailored to user needs.</div>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">💻</div>
+        <div class="service-title">Web Design</div>
+        <div class="service-desc">Designing modern, responsive, and visually appealing websites.</div>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">⚛️</div>
+        <div class="service-title">Front-End Development</div>
+        <div class="service-desc">Building fast, interactive, and accessible client-side web applications.</div>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🛠️</div>
+        <div class="service-title">Back-End Development</div>
+        <div class="service-desc">Developing robust server-side logic and database management.</div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+      <h2>Projects</h2>
+      <div class="project-card">
+        <div class="project-title">Humanoid Robotics Workshop</div>
+        <div class="project-tech">Python, Robotics, Circuitry</div>
+        <div class="project-desc">Built and programmed a humanoid robot, studying its parts and circuitry in detail.</div>
+      </div>
+      <div class="project-card">
+        <div class="project-title">Tic Tac Toe Game</div>
+        <div class="project-tech">JavaScript, HTML, CSS</div>
+        <div class="project-desc">Created an interactive web-based Tic Tac Toe game with logic and UI.</div>
+      </div>
+      <div class="project-card">
+        <div class="project-title">Stopwatch Website</div>
+        <div class="project-tech">JavaScript, HTML, CSS</div>
+        <div class="project-desc">Developed a functional stopwatch web application with start/stop/reset features.</div>
+      </div>
+      <div class="project-card">
+        <div class="project-title">Anti-Sleep Alarm for Drivers</div>
+        <div class="project-tech">Electronics, Python</div>
+        <div class="project-desc">Created a real-world anti-sleep alarm system designed to alert drowsy drivers.</div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form id="contact-form" onsubmit="return handleSubmit(event)">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required placeholder="Your name" />
+        
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required placeholder="Your email" />
+        
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required placeholder="Write your message"></textarea>
+        
+        <button type="submit">Send Message</button>
+      </form>
+      <div class="contact-links">
+        <a href="mailto: aasthaprajapati10@gmail.com"> 📧 Gmail </a><br>
+        📞Phone number - +918960653015 <br>
+        <a href="https://linkedin.com/in/aastha-prajapati" target="_blank">🔗 Linkedin </a> <br>
+        <a href="https://github.com/aastha0777" target="_blank">🐙 GitHub</a> <br>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="folio.js"></script>
+</body>
+</html>
